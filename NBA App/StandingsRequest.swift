@@ -1,5 +1,5 @@
 //
-//  EventRequest.swift
+//  StandingsRequest.swift
 //  NBA App
 //
 //  Created by Zaid Omar on 2020-10-22.
@@ -40,7 +40,7 @@ struct StandingsRequest {
             do {
                 let decoder = JSONDecoder()
                 let standingsReponse = try decoder.decode(StandingsResponse.self, from: jsonData)
-                let standingsDetails = standingsReponse.response.events
+                let standingsDetails = standingsReponse.response.standings
                 completion(.success(standingsDetails))
             } catch {
                 completion(.failure(.cannotProcessData))

@@ -1,5 +1,5 @@
 //
-//  Event.swift
+//  Standings.swift
 //  NBA App
 //
 //  Created by Zaid Omar on 2020-10-22.
@@ -13,7 +13,7 @@ struct StandingsResponse: Decodable {
 }
 
 struct Standings: Decodable {
-    var events:[StandingsDetail]
+    var standings:[StandingsDetail]
 }
 
 struct StandingsDetail: Decodable {
